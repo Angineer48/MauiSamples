@@ -10,7 +10,7 @@
                 <Label Padding="5" VerticalTextAlignment="Center" Text="Second" Background="Red" FlexLayout.Grow="0" FlexLayout.AlignSelf="End" />
                 <Label Padding="5" VerticalTextAlignment="Center" Text="Third" Background="Purple" FlexLayout.AlignSelf="Start" />
             </FlexLayout>
-            <Grid RowDefinitions="*, *, *" ColumnDefinitions="*, *, *" BackgroundColor="LightGrey" FlexLayout.Grow="1.0">
+            <Grid RowDefinitions="*, *, *" ColumnDefinitions="*, *, *" BackgroundColor="LightGrey" HeightRequest="100">
                 <BoxView Grid.Row="0" Grid.Column="0" Color="LightGreen" />
                 <BoxView Grid.Row="0" Grid.Column="1" Color="Green" />
                 <BoxView Grid.Row="0" Grid.Column="2" Color="DarkGreen" />
@@ -20,6 +20,9 @@
                     <Label Padding="5" VerticalTextAlignment="Center" Text="Third" Background="Purple" />
                 </FlexLayout>
             </Grid>
+            <AbsoluteLayout HeightRequest="50" BackgroundColor="LightGrey">
+                <BoxView Color="LightBlue" AbsoluteLayout.LayoutFlags="All" AbsoluteLayout.LayoutBounds="0.5, 0.5, 0.8, 1.0" MaximumWidthRequest="800" />
+            </AbsoluteLayout>
         </VerticalStackLayout>
     </ScrollView>
 
